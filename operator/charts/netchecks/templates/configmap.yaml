@@ -21,8 +21,6 @@ data:
         {{- if .Values.probeConfig.affinity }}
         "affinity": {{ .Values.probeConfig.affinity | toJson }},
         {{- end }}        
-        
-        
         "imagePullSecrets": {{ .Values.probeConfig.imagePullSecrets | toJson }},
         "podAnnotations": {{ .Values.probeConfig.podAnnotations | toJson }}
         }
